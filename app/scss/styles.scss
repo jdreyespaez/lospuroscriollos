@@ -181,7 +181,7 @@ header {
     background-color: #f5f2b4;
     position: relative;
     z-index: 1;
-    height:75%;
+    height:78%;
     .image {
       background-image: url(../images/SantiagoRivas.jpg);
       background-size: 120px 120px;
@@ -202,8 +202,51 @@ header {
           text-transform: uppercase;
         }
         .headline {
-
+          margin-bottom: 5px!important;
+          color: #666;
+          font-size: 16px;
         }
+      }
+    .body {
+      text-align: center;
+      .bio p {
+        margin-bottom: 20px!important;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        max-width: 680px;
+        text-align: justify;
+      }
+      .datos-curiosos {
+        h2 {
+            margin-bottom: 5px!important;
+            font-size: 20px;
+            text-transform: uppercase;
+          }
+        ul li {
+          text-align: center;
+          font-size: 14px;
+        }
+      }
+      .redes-sociales {
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 5px!important;
+            font-size: 20px;
+            text-transform: uppercase;
+          }
+        ul li {
+          display: inline;
+        a{
+          color: #182828;
+          text-decoration: none;
+          border-bottom: 1px solid transparent;
+          &:hover {
+            color: white;
+          }
+        }
+        }
+      }
     }
   }
 }
