@@ -47,7 +47,10 @@ gulp.task('sass', function() {
 
 gulp.task('templates', function() {
 	gulp.src('app/templates/*.jade')
-		.pipe(jade())
+		.pipe(jade({
+			pretty: true
+		}
+		))
 		.pipe(gulp.dest('app'))
 })
 
