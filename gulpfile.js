@@ -146,17 +146,13 @@ gulp.task('build', ['build:copy', 'build:remove']);
 // GitHub Pages
 // ///////////////////////
 
-var gulp        = require('gulp');
-var deploy      = require('gulp-gh-pages');
+var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
 
-/**
- * Push build to gh-pages
- */
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
-
 
 // ///////////////////////
 // Default Task
